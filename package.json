@@ -1,0 +1,29 @@
+{
+  "name": "poc_puppeteer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "test": "node .\\src\\index.js <URL> chart1.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jserra91/poc_puppeteer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jserra91/poc_puppeteer/issues"
+  },
+  "homepage": "https://github.com/jserra91/poc_puppeteer#readme",
+  "dependencies": {
+    "puppeteer-core": "19.3.0"
+  },
+  "targets": {
+    "main": {
+      "includeNodeModules": true
+    }
+  }
+}
