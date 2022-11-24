@@ -5,11 +5,13 @@ const imagePath = process.argv[3];
 const limit = 3;
 const selector = "app-report-chart";
 
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
 async function main() {
     // Browser options
     const launchOptions = {
-        headless: false, 
-        //executablePath: '/usr/bin/google-chrome-stable', // Linux
+        headless: true, 
+        //executablePath: '/usr/bin/chromium', // Linux
         executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', // Windows
         args: ['--start-maximized'],
         ignoreHTTPSErrors: true
@@ -42,6 +44,7 @@ async function main() {
         *       Try again
         * */
         try {
+            await delay(5000);
             await page.waitForSelector(selector);
             const element = await page.$(selector);
             if (element) {
