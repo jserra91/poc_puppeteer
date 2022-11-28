@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jserra91/poc_puppeteer#readme",
   "dependencies": {
-    "puppeteer-core": "19.3.0"
+    "puppeteer-core": "1.15.0"
   },
   "targets": {
     "main": {
